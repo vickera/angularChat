@@ -1,0 +1,24 @@
+<html> 
+<head> 
+	<title>magi</title>
+	<link rel="stylesheet" href="/client/css/main.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"></style>
+</head> 
+<body>
+	<div id="main" ng-app="main">
+		<div ng-controller="chat" id="chat">
+			<div id="chatRoom" >
+			</div>
+			<form name="msgForm">
+				<input type="text" ng-model="msg" placeholder="Hey there friends..." required pattern=".{2,}">
+				<button ng-disabled="msgForm.$invalid" ng-click="sendMsg()" class="btn btn-default">Send</button>
+			</form>
+		</div>
+	</div>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+	<script src="/socket.io/socket.io.js"></script> 
+	<script src="/client/js/main.js"></script>
+</body> 
+</html>
+
