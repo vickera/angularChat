@@ -39,7 +39,6 @@ io.sockets.on('connection', function(socket) {
 
 	//chat io
 	socket.on('sendMsg', function(data) {
-		var username = SOCKET_LIST[socket.id].username;
 		for (var i in SOCKET_LIST) {
 			SOCKET_LIST[i].emit('emitMsg', socket.id + ': ' + data.msg);
 		}
