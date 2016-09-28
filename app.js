@@ -12,7 +12,7 @@ app.get('/', function(req, res) {
 app.use('/client', express.static(__dirname + '/client'));
 
 serv.listen(process.env.PORT);
-console.log("Server started at http://nodejs-vickera.c9users.io");
+console.log("Server started...");
 
 /**
  *  Creating a socket for player
