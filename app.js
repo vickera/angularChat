@@ -22,7 +22,7 @@ var SOCKET_LIST = {};
 var io = require('socket.io')(serv, {});
 io.sockets.on('connection', function(socket) {
 	//signing in and initializing
-	socket.id = Math.floor(Math.random() * 1000);
+	socket.id = Math.floor(Math.random() * 10000);
 	SOCKET_LIST[socket.id] = socket;
 	console.log(SOCKET_LIST[socket.id].id + ' connected.')
 	for (var i in SOCKET_LIST) {
