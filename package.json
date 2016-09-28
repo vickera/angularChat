@@ -1,16 +1,27 @@
 {
-  "name": "project",
+  "name": "Super Simple Chat",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "vickera@yahoo.com",
   "license": "ISC",
   "dependencies": {
     "express": "^4.13.4",
     "socket.io": "^1.4.6"
   },
+  "engines": {
+    "node": "4.1.1"
+  },
   "devDependencies": {},
-  "description": ""
+  "description": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vickera/angularChat.git"
+  },
+  "bugs": {
+    "url": "https://github.com/vickera/angularChat/issues"
+  },
+  "homepage": "https://github.com/vickera/angularChat#readme"
 }
