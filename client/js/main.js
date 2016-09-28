@@ -1,6 +1,4 @@
-var signInApp = angular.module('signInApp', []);
-
-var main = angular.module('main', ['signInApp']);
+var main = angular.module('main', []);
 
 var socket = io();
 

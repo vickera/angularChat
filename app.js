@@ -12,7 +12,7 @@ app.get('/', function(req, res) {
 app.use('/client', express.static(__dirname + '/client'));
 
 serv.listen(process.env.PORT);
-console.log("Server started.");
+console.log("Server started at http://nodejs-vickera.c9users.io");
 
 /**
  *  Creating a socket for player
@@ -22,7 +22,7 @@ var SOCKET_LIST = {};
 var io = require('socket.io')(serv, {});
 io.sockets.on('connection', function(socket) {
 	//signing in and initializing
-	socket.id = Math.floor(Math.random() * 100000000);
+	socket.id = Math.floor(Math.random() * 1000);
 	SOCKET_LIST[socket.id] = socket;
 	console.log(SOCKET_LIST[socket.id].id + ' connected.')
 	for (var i in SOCKET_LIST) {
